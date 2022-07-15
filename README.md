@@ -1,2 +1,2 @@
 # Fortran-
-Collection of SQL assignments/projects 
+Collection of Fortran assignments/projects 
