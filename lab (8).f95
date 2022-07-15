@@ -7,6 +7,7 @@ program lab
     !This program is uses Newton's method to find roots
     !This program creates two functions to find the root for the equation
     !This program finds all five roots of y=sin(x)-15x+1.5
+    !NEED TO FIX DOUBLE PRECISION NUMBERS
 
     implicit none
     !declaring variables
