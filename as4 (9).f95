@@ -51,7 +51,7 @@ program encrypt
 end program encrypt
 
    !Function used to divide matrix2 by determinant of matrix 1
-   function Determinant(M, n) result(Det)
+function Determinant(M, n) result(Det)
 
    implicit none
 
@@ -70,4 +70,4 @@ end program encrypt
       -m(1,1)*m(2,3)*m(3,2)
       return
    end if
-   end function Determinant
+end function Determinant
