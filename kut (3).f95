@@ -29,14 +29,14 @@ program eulers
 
     !opens file,writes to file and  implements runge kutta method in do loop
     open(42,file='kutta4.txt')
-    do i=1,n
-    k1=myfunc(t,y)
-    k2=myfunc(t+h/2*k1,y+h/2)
-    k3=myfunc(t+h/2*k2,y+h/2)
-    k4=myfunc(t+h*k3,y+h)
-    t=t+h
-    y=y+(h/6)*(k1+k2*2+2*k3+k4)
-    write(42,*)t,y
+    do i=1.0,n
+       k1=myfunc(t,y)
+       k2=myfunc(t+h/2.0*k1,y+h/2.0)
+       k3=myfunc(t+h/2.0*k2,y+h/2.0)
+       k4=myfunc(t+h*k3,y+h)
+       t=t+h
+       y=y+(h/6.0)*(k1+k2*2+2*k3+k4)
+       write(42,*)t,y
     end do
 
     close(42)
@@ -49,6 +49,6 @@ function myfunc(t,y)result(h)
     implicit none
     real::y,t,h
 
-    h=y**2-(y**3/5)-t
+    h=y**2.0-(y**3.0/5.0)-t
 
 end function myfunc
